@@ -1,0 +1,179 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML>
+<HEAD>
+<title>Витал-центр / Запись на курсы</title>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1251" />
+<link rel="stylesheet" href="reservoir.css" type="text/css" />
+</HEAD>
+
+<BODY background="#" bgcolor="#FFFFFF" text="#000000" link="#C000C0" vlink="#0000C0" alink="#0000C0">
+
+
+<form action="dodosmail.php" method="POST" class="theform">
+
+	<!-- these variables require customization -->
+	<input type="hidden" name="required_fields" value="subject,name,email,message">
+	<input type="hidden" name="subject" value="VitalCentreRegistration">
+	<!--input type="hidden" name="your_email_address" value="you@yourdomain.com"-->
+	<input type="hidden" name="check_email_address" value="yes">
+
+	<!-- these variables are for error page and output page if you didn't choose to redirect -->
+	<!-- if you have defined all these in the css file, you should not have to define these, you
+			choose to erase them all -->
+	<input type="hidden" name="background_color" value="#FFFFFF">
+	<input type="hidden" name="background_image" value="back.png">
+	<input type="hidden" name="text_color" value="#000000">
+	<input type="hidden" name="link_color" value="#C000C0">
+	<input type="hidden" name="visited_link_color" value="#0000C0">
+	<input type="hidden" name="active_link_color" value="#0000C0">
+	<!--input type="hidden" name="font_name" value="Verdana"-->
+	<!--input type="hidden" name="font_size" value="2"-->
+
+	<!-- the font color for highlighting required field -->
+	<input type="hidden" name="highlight_color" value="red">
+
+	<!-- leave it blank if you don't have a css file or know what it is -->
+	<input type="hidden" name="css_file" value="reservoir.css">
+
+
+
+	<!-- if you want to use redirection, uncomment the following -->
+	<input type="hidden" name="after_url" value="index.html">
+
+
+
+
+<table width="100%" border="0" cellpadding="10" cellspacing="1">
+
+<tr>
+<td align="right">
+</td>
+<td>
+Запись на курсы.
+</td>
+</tr>
+
+<tr>
+<td align="right">
+Фамилия:
+</td>
+<td>
+<input type="text" name="familija" />
+</td>
+</tr>
+
+<tr>
+<td align="right">
+Имя:
+</td>
+<td>
+<input type="text" name="name" />
+</td>
+</tr>
+
+<tr>
+<td align="right">
+Отчество:
+</td>
+<td>
+<input type="text" name="otchestvo" />
+</td>
+</tr>
+
+<tr>
+<td align="right">
+Город:
+</td>
+<td>
+<input type="text" name="gorod" />
+</td>
+</tr>
+
+<tr>
+<td align="right">
+Домашний телефон:
+</td>
+<td>
+<input type="text" name="dom telefon" />
+</td>
+</tr>
+
+<tr>
+<td align="right">
+Рабочий телефон:
+</td>
+<td>
+<input type="text" name="rab telefon" />
+</td>
+</tr>
+
+<tr>
+<td align="right">
+Мобильный телефон:
+</td>
+<td>
+<input type="text" name="mob telefon" />
+</td>
+</tr>
+
+<tr>
+<td align="right">
+Электронная почта:
+</td>
+<td>
+<input type="text" name="email" />
+</td>
+</tr>
+
+<tr>
+<td align="right">
+Я хочу посещать:
+</td>
+<td>
+<input type="checkbox" name="checkboxtest[]" value="1">базовый курс массажа
+<input type="checkbox" name="checkboxtest[]" value="2">&laquo;spa методики&raquo; 
+<input type="checkbox" name="checkboxtest[]" value="3">&laquo;восточные системы&raquo;
+<input type="checkbox" name="checkboxtest[]" value="4">школа &laquo;Помоги себе сам&raquo;
+</td>
+</tr>
+
+<tr>
+<td align="right">
+Дата начала занятий:
+</td>
+<td>
+<input type="text" name="data" />
+</td>
+</tr>
+
+<tr>
+<td align="right">
+Дополнительная информация:
+</td>
+<td>
+<textarea rows="5" cols="50" name="message"></textarea>
+</td>
+</tr>
+
+
+
+
+
+
+
+
+
+<tr>
+<td align="right">
+</td>
+<td>
+<input type="submit" value="Отправить" />
+</td>
+</tr>
+
+</form>
+
+
+
+</BODY>
+</HTML>

@@ -1,0 +1,203 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<HTML>
+<HEAD>
+<meta http-equiv="content-type" content="text/html; charset=windows-1251" />
+<title>Витал-центр / Запись на курсы</title>
+<link rel="stylesheet" type="text/css" href="vital2.css" />
+</HEAD>
+
+<body>
+<div id="outer">
+<div id="upbg"></div>
+<div id="inner">  
+		<div id="header">
+		<h2>Оздоровительный</h2>
+			<h1>Витал-центр</h1>
+		</div>
+	
+		<div id="splash"></div>
+        <div id="menu"></div>
+
+<div id="secondarycontent">		
+<div class="content"> 
+<ul class="navigation">
+
+<li><a href="index.html">Главная</a></li>
+<li><a href="massage.html">О массаже</a></li>
+<!--<li><a href="#">Системы оздоровления</a></li>-->
+<li><a href="courses.html">Курсы массажа</a></li>
+<li><a href="school.html">Школа &laquo;Помоги себе сам&raquo;</a></li>
+<li class="current "><b class="selected">Запись на курсы</b></li>
+<li><a href="otzyvy.html">Отзывы</a></li>
+<li><a href="vacancy.html">Вакансии</a></li>
+<li><a href="contacts.html">Контактная информация</a></li>
+</ul>
+</div>
+</div>
+
+
+    <div id="primarycontent">
+	<h3>Предварительная запись на курсы</h3>	
+	<div class="content">
+<p>Поля, обязательные для заполнения, отмечены знаком <span class="required">*</span></p>
+<form action="dodosmail.php" method="POST" class="theform">
+
+	<!-- these variables require customization -->
+	<input type="hidden" name="required_fields" value="familija,imja,otchestvo,gorod,mob_telefon,email">
+	<input type="hidden" name="subject" value="VitalCentreRegistration">
+	<!--input type="hidden" name="your_email_address" value="you@yourdomain.com"-->
+	<input type="hidden" name="check_email_address" value="no">
+
+	<!-- these variables are for error page and output page if you didn't choose to redirect -->
+	<!-- if you have defined all these in the css file, you should not have to define these, you
+			choose to erase them all -->
+	<!--<input type="hidden" name="background_color" value="#FFFFFF">
+	<input type="hidden" name="background_image" value="back.png">
+	<input type="hidden" name="text_color" value="#000000">
+	<input type="hidden" name="link_color" value="#C000C0">
+	<input type="hidden" name="visited_link_color" value="#0000C0">
+	<input type="hidden" name="active_link_color" value="#0000C0">-->
+	<!--input type="hidden" name="font_name" value="Verdana"-->
+	<!--input type="hidden" name="font_size" value="2"-->
+
+	<!-- the font color for highlighting required field -->
+	<input type="hidden" name="highlight_color" value="red">
+
+	<!-- leave it blank if you don't have a css file or know what it is -->
+	<input type="hidden" name="css_file" value="vital2.css">
+
+
+
+	<!-- if you want to use redirection, uncomment the following -->
+	<input type="hidden" name="after_url" value="form_success.html">
+
+
+
+
+<table width="100%" border="0" cellpadding="0" cellspacing="10">
+
+<tr>
+<td align="left">
+<span class="required">*</span>Фамилия:
+</td>
+<td>
+<input type="text" name="familija" />
+</td>
+</tr>
+
+<tr>
+<td align="left">
+<span class="required">*</span>Имя:
+</td>
+<td>
+<input type="text" name="imja" />
+</td>
+</tr>
+
+<tr>
+<td align="left">
+<span class="required">*</span>Отчество:
+</td>
+<td>
+<input type="text" name="otchestvo" />
+</td>
+</tr>
+
+<tr>
+<td align="left">
+<span class="required">*</span>Город:
+</td>
+<td>
+<input type="text" name="gorod" />
+</td>
+</tr>
+
+<tr>
+<td align="left">
+Домашний телефон:
+</td>
+<td>
+<input type="text" name="dom_telefon" />
+</td>
+</tr>
+
+<tr>
+<td align="left">
+Рабочий телефон:
+</td>
+<td>
+<input type="text" name="rab_telefon" />
+</td>
+</tr>
+
+<tr>
+<td align="left">
+<span class="required">*</span>Мобильный телефон:
+</td>
+<td>
+<input type="text" name="mob_telefon" />
+</td>
+</tr>
+
+<tr>
+<td align="left">
+<span class="required">*</span>Электронная почта:
+</td>
+<td>
+<input type="text" name="email" />
+</td>
+</tr>
+
+<tr>
+<td align="left">
+<span class="required">*</span>Я хочу посещать:
+</td>
+<td>
+<input type="checkbox" name="checkboxtest[]" value="1">базовый курс массажа<br />
+<!--<input type="checkbox" name="checkboxtest[]" value="2">&laquo;spa методики&raquo; 
+<input type="checkbox" name="checkboxtest[]" value="3">&laquo;Восточные системы&raquo;-->
+<input type="checkbox" name="checkboxtest[]" value="4">школу &laquo;Помоги себе сам&raquo;
+</td>
+</tr>
+
+<tr>
+<td align="left">
+Дополнительная<br /> информация:
+</td>
+<td>
+<textarea rows="5" cols="30" name="message"></textarea>
+</td>
+</tr>
+
+
+
+
+
+
+
+
+
+<tr>
+<td align="right">
+</td>
+<td>
+<input type="submit" value="Отправить" />
+</td>
+</tr>
+</table>
+</form>
+    </div>	  
+</div>
+  
+	
+		 <div id="footer">
+		       
+			   &copy; 2008 Витал Центр		
+			    
+</div>
+</div>
+</div>
+
+
+</body>
+</HTML>

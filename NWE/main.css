@@ -1,0 +1,179 @@
+* { padding: 0; margin: 0; }
+
+body {
+ font-family: Arial, Helvetica, sans-serif;
+ font-size: 13px;
+}
+
+
+
+
+
+#wrapper { 
+ margin: 0 auto;
+ width: 922px;
+}
+#header {
+	color: #FFFFFF;
+	width: 899px;
+	float: left;
+	padding: 0px;
+	height: 20px;
+	margin: 0px 0px 0px 0px;
+	background: #fff;
+}
+#navigation {
+	float: left;
+	width: 900px;
+	color: #333;
+	height: 190px;
+	margin: 0px 0px 20px 0px;
+	background-color:#fff;
+	/*background-image:url(images/WEBTEST2.png);
+	background-repeat:no-repeat;*/
+}
+
+#navigation_left {
+	float: left ;
+	width: 900px;
+	color: #333;
+	height: 210px;
+	margin: 0px 0px 5px 0px;
+	background-color:#fff;
+	/*background-image: url(images/WEBTEST5.png);*/
+	background: url(images/WEBTEST5.png) no-repeat;
+
+
+}
+
+
+
+#leftcolumn { 
+ color: #333;
+ background: fff;
+ margin: 0;
+ padding: 30px 0px 0px 0px;
+ height: 355px;
+ width: 229px;
+ float: left;
+}
+#rightcolumn { 
+ float: left;
+ color: #333;
+ background: #fff;
+ margin: 0px 5px 5px 0px;
+ padding: 10px;
+ height: auto;
+ width: 650px;
+ display: inline;
+ 
+ 
+}
+
+#content {
+margin-top:22px;
+ padding:0;
+
+
+}
+
+
+#content h3 {
+color: #90b11f;
+margin-top:10px;
+}
+#content h2 {
+	color: #CCCCCC;
+	margin-top:10px;
+	margin-bottom:15px;
+	
+}
+
+#content h4 {
+	color: #90b11f;
+	margin-top:10px;
+	margin-bottom:15px;	
+}
+
+
+#content a { color: #1e8dd4;}
+
+#footer { 
+ width: 900px;
+ clear: both;
+ color: #fff;
+ background: #90b11f;
+ margin: 0px 0px 20px 0px;
+ padding: 0px;
+}
+
+#content ul {
+list-style: none;
+}
+
+
+#navcontainer { margin-left: 0; }
+
+#navcontainer ul
+{
+margin: 0;
+padding: 0;
+list-style-type: none;
+font-family: Arial, Helvetica, sans-serif;
+}
+
+#navcontainer li { margin: 0 0 1px 0; }
+
+#navcontainer a
+{
+display: block;
+padding: 5px 5px;
+width: 205px;
+color: #1e8dd4;
+background-color: fff;
+text-decoration: none;
+}
+
+#navcontainer a:hover
+{
+color: #fff;
+background-color: #69C;
+text-decoration: none;
+}
+
+#navcontainer ul ul li { margin: 0 0 1px 0; }
+
+#navcontainer ul ul a
+{
+display: block;
+padding: 5px 5px 5px 25px;
+width: 195px;
+color: #1e8dd4;
+background-color: #fff;
+text-decoration: none;
+}
+
+#navcontainer ul ul a:hover
+{
+color: #fff;
+background-color: #69C;
+text-decoration: underline;
+}
+
+
+/*** PHOTO STYLE ***/
+div.photo {
+  float:right;
+  background-color:#f5f5f2;
+  margin-left:10px;
+  margin-bottom:10px;
+  font-size:9px;
+  padding:0;
+  border:1px solid #d8d6ce;
+  text-align:center;
+}
+div.photo img {
+  display:block;
+  margin-bottom:0px;
+  border:1px solid #d8d6ce;
+}
